@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="img/logo.png">
+    <title>Gift of Gratitude</title>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/donate-popup.css">
+
+</head>
+
+
+<header id="header">
+    <nav class="navbar">
+
+        <div class="nav-logo">
+            <a href="index.html" class="logo-link">
+                <img src="img/logo.png" alt="Logo" class="logo">
+                <h1>Gift of Gratitude</h1>
+            </a>
+        </div>
+
+        <ul class="nav-menu">
+            <li class="nav-item">
+                <a href="index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="about.html" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+                <a href="news.html" class="nav-link">News</a>
+            </li>
+            <li class="nav-item">
+                <a href="volunteer.html" class="nav-link">Volunteer</a>
+            </li>
+            <li class="nav-item">
+                <a href="contact.html" class="nav-link">Contact</a>
+            </li>
+
+            <li class="nav-item">
+                <button class="nav-item-button">
+                    <div class="popup" onclick="myFunction()">Donate
+                        <span class="popuptext" id="myPopup"><script async src="https://js.stripe.com/v3/buy-button.js">
+                        </script>
+                        
+                        <stripe-buy-button buy-button-id="buy_btn_1PV6m0RtkJeRmXQftagN0EPA"
+                          publishable-key="pk_test_51PO5wyRtkJeRmXQf2Db8Te7DOmyKH5ahh1ZQwCKlRQZX2tEMIMjFzXObbgEm2mftlIVTE8nSP2xgRKuF2doZxLcn00YNy1zdzY">
+                        </stripe-buy-button> </span>
+                      </div>
+                </button>
+                
+                  
+                  
+
+            </li>
+        </ul>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+</header>
+
+<body>
+    <div id="featured">
+        <h1> Providing XXXX <br> during Christmas Season</h1>
+        <img src="img/banner.png" alt="">
+    </div>
+    <div id="wrapper">
+
+        <div class="about">
+            <h1>
+                What we do!
+            </h1>
+            <p>
+                (description of organization, location, how long has this company been) Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit. Vivamus ut tincidunt lectus, vitae sodales eros. Orci varius natoque
+                penatibus et magnis dis parturient montes, nascetur ridiculus mus.Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit. Vivamus ut tincidunt lectus, vitae sodales eros. Orci varius natoque
+                penatibus et magnis dis parturient montes, nascetur ridiculus mus.Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit. Vivamus ut tincidunt lectus, vitae sodales eros. Orci varius natoque
+                penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+            </p>
+            <button class="button">
+                <a href="about.html"> Learn More About Us</a>
+            </button>
+        </div>
+        <div class="carousel">
+            <h1>
+                What We Give
+            </h1>
+            <div class="boxx"> <button class="prev" onclick="moveSlide(-1)"><img src="img/prev.png" alt=""></button>
+                <div class="slider-container">
+
+                    <div class="slider">
+
+                        <div class="slide"><img src="img/sticky_note.png" alt="Image 1">
+                            <h2>Sending Messages of 1</h2>
+                            <p>(appreciaition message for donors) Lorem ipsum dolor sit amet, consectetur adipiscing
+                                elit.
+                            </p>
+                        </div>
+                        <div class="slide"><img src="img/banner.png" alt="Image 2">
+                            <h2>Sending Messages of 2</h2>
+                            <p>(appreciaition message for donors) Lorem ipsum dolor sit amet, consectetur adipiscing
+                                elit.
+                            </p>
+                        </div>
+                        <div class="slide"><img src="img/sticky_note.png" alt="Image 3">
+                            <h2>Sending Messages of 3</h2>
+                            <p>(appreciaition message for donors) Lorem ipsum dolor sit amet, consectetur adipiscing
+                                elit.
+                            </p>
+                        </div>
+
+                        <!-- Add more slides as needed -->
+                    </div>
+                    <!-- <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+                <button class="next" onclick="moveSlide(1)">&#10095;</button> -->
+                </div>
+
+                <button class="next" onclick="moveSlide(1)"><img src="img/next.png" alt=""></button>
+            </div>
+        </div>
+
+        <div class="volunteer-section">
+            <div class="volunteer">
+                <h1> Volunteers Needed! </h1>
+                <p>
+                    Seeking for volunteers this upcoming *month*. Join us now!
+                </p>
+                <button class="button">
+                    <a href="volunteer.html"> Apply Now</a>
+                </button>
+            </div>
+        </div>
+
+        <div class="donors-section">
+            <h1>Our Donors</h1>
+            <div class="donors">
+                <li> <img src="img/teamvan.png" alt=""></li>
+                <li><img src="img/platinum_heroes.png" alt=""></li>
+                <li><img src="img/code_ninjas.png" alt=""></li>
+            </div>
+            <p>
+                (appreciaition message for donors) Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            </p>
+        </div>
+
+
+    </div>
+
+    </div>
+
+</body>
+
+
+<script src="js/script.js"></script>
+<script>
+    // When the user clicks on div, open the popup
+    function myFunction() {
+      var popup = document.getElementById("myPopup");
+      popup.classList.toggle("show");
+    }
+    </script>
+
+<footer id="footer">
+
+    <ul class="footer__nav">
+        <div class="left">
+            <li class="nav__item">
+                <ul class="nav__ul">
+                    <li>
+                        <a href="index.html" class="logo-link">
+                            <img src="img/logo-footer.png" alt="Logo">
+                            <h1>Gift of Gratitude</h1>
+
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </div>
+
+        <div class="right">
+            <li class="nav__item">
+                <h2 class="nav__title">Get To Know Us</h2>
+
+                <ul class="nav__ul">
+                    <li>
+                        <a href="about.html">About Us</a>
+                    </li>
+                    <li>
+                        <a href="news.html">Blog Posts</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="nav__item">
+                <h2 class="nav__title">Get Involved</h2>
+                <ul class="nav__ul">
+                    <li>
+                        <a href="donate.html">Donate</a>
+                    </li>
+                    <li>
+                        <a href="volunteer.html">Volunteer</a>
+                    </li>
+                    <li>
+                        <a href="news.html">Event</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="nav__item">
+                <h2 class="nav__title">Follow Us</h2>
+
+                <ul class="nav__ul social-media">
+                    <li>
+                        <a href="https://www.instagram.com/giftofgratitudecanada/" target="_blank"><img src="img/ig.png" alt="ig-link:"></a>
+                    </li>
+                    <li>
+                        <a href="https://x.com/gog_vancouver" target="_blank"><img src="img/x.png" alt="x-link:"></a>
+                    </li>
+                    <li>
+                        <a href="https://discord.com/invite/ZcJ8EpugA4" target="_blank"><img src="img/dc.png" alt="dc-link:"></a>
+                    </li>
+                </ul>
+            </li>
+        </div>
+
+    </ul>
+    <hr>
+    <div class="bottom-footer">
+        <address>
+
+            <a href="mailto:example@gmail.com">info@giftofgratitude.ca</a>
+        </address>
+        <div class="copyright">
+            <p>&copy;2024 Gift of Gratitude. All rights reserved</p>
+            <a href="#header"><img src="img/scrollup.png" alt="scroll to top"></a>
+
+        </div>
+    </div>
+</footer>
+
+
+</html>
