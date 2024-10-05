@@ -1,0 +1,214 @@
+#container {
+    width: 70%;
+    margin: auto;
+    font-size: 1.2rem;
+}
+
+.intro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text h1{
+    margin-bottom: 50px;
+}
+
+.intro img{
+    width: 350px;
+    margin: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+.hobbies{
+    display: flex;
+    font-size: 1.2rem;
+    align-items: center;
+    padding: 50px 0px;
+}
+.hobbies img{
+    width: 250px;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+
+    margin-right: 50px;
+}
+
+
+.icons {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.icons li {
+    padding: 10px;
+    margin: 20px;
+}
+
+.icons li img {
+    width: 3rem;
+
+}
+
+.skills h1{
+    text-align: center;
+}
+.dev img {
+    width: 20rem;
+}
+
+h1 {
+    margin-bottom: 20px;
+    letter-spacing: 5px;
+}
+
+hr {
+    width: 90%;
+    display: flex;
+    margin: auto;
+    border: 0;
+    height: 1px;
+    /* margin-bottom: 15px;
+    margin-top: 10px; */
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgb(247, 183, 255), rgba(0, 0, 0, 0));
+}
+
+.animate__animated.animate__fadeInLeft.animate__fadeIn {
+    --animate-duration: 2s;
+}
+
+.animate__animated.animate__bounceIn {
+
+    --animate-duration: 1s;
+    --animate-delay: 10s;
+}
+
+.highlight{
+    font-size: 0.7rem;
+    width: 50%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.values{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.connect {
+    padding: 40px;
+    text-align: center;
+    margin-top: 30px;
+    background-color: rgb(40, 14, 40);
+    /* background-image: linear-gradient(to bottom, #331535, #3f1a41, #4b1f4e, #57245b, #642968, #642968, #642968, #642968, #57245b, #4b1f4e, #3f1a41, #331535); */
+}
+
+.connect h2 {
+    padding: 10px;
+}
+
+.contact {
+    padding: 10px;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.contact li {
+
+    padding: 10px;
+}
+
+.contact img {
+
+    width: 3rem;
+    opacity: 65%;
+    transition: ease-in-out 0.25s;
+
+}
+
+.contact img:hover {
+    opacity: 100%;
+}
+
+.top {
+
+    text-decoration: none;
+    font-family: sans-serif;
+    color: #fde0ff;
+
+  }
+
+@media (min-width: 201px) and (max-width: 800px) {
+
+    /* for phone */
+    #container {
+        width: 95%;
+        margin: auto;
+        font-size: 1.2rem;
+    }
+
+    .icons li img {
+        width: 2.5rem;
+       
+    }
+
+    .intro {
+        background-color: #40709f;
+        
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hobbies {
+        flex-direction: column;
+
+    }
+    .hobbies .text {
+        z-index: 1;
+        order: 1;
+    }
+
+    .hobbies img {
+        z-index: 2;
+        order: 2;
+    }
+
+}
+
+@media (min-width: 801px) and (max-width: 1000px) {
+    #container {
+        width: 80%;
+        margin: auto;
+        font-size: 1.2rem;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .icons li img {
+        width: 2.5rem;
+        flex-wrap: wrap;
+
+    }
+
+     .intro {
+        background-color: #bb45c4;
+
+    }
+}
+
+@media (min-width: 901px) {
+
+    /* for desktop */
+
+
+}
+

@@ -1,0 +1,389 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@1,9..144,700&display=swap');
+
+
+#container {
+    width: 70%;
+    height: 100vh;
+    color: #fde0ff;
+    display: flex;
+    align-items: center;
+    justify-content: stretch;
+    text-align: left;
+    margin: auto;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+}
+
+body {
+    opacity: 1;
+    transition-duration: 0.7s;
+    transition-property: opacity;
+}
+
+.subdomain li a {
+    color: #fff;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+
+.button {
+    padding: 10px;
+    margin-top: 20px;
+    background-image: linear-gradient(to bottom right, rgb(56, 107, 172), rgb(163, 57, 205));
+    border-radius: 10px;
+    color: #fde0ff;
+    cursor: pointer;
+    border-width: 0px;
+    transition: ease-in-out 0.25s;
+    font-size: large;
+}
+
+.button:hover {
+    background-image: linear-gradient(to bottom right, rgb(163, 57, 205), rgb(56, 107, 172));
+}
+
+#container h1 {
+    font-family: 'Fraunces', serif;
+    background-color: #f3ec78;
+    background-image: linear-gradient(45deg, rgb(213, 113, 252), rgb(68, 147, 250));
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    margin-bottom: 10px;
+}
+
+.showcase {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+.box {
+
+    width: 40%;
+    margin: auto;
+    border-radius: 30px;
+    border-color: #160418;
+    border-style: solid;
+    margin-top: 40px;
+    padding: 20PX;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+
+    img {
+        width: 70%;
+        height: 100%;
+        padding: 15px;
+        border-radius: 30px;
+        transition: ease-in-out 0.25s;
+        margin-left: auto;
+        margin-right: auto; 
+    }
+}
+
+.box:hover {
+    background-color: #331535;
+}
+
+h2 {
+    letter-spacing: 5px;
+}
+
+.diplay_1280 {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1,
+h2 {
+    padding-bottom: 10px;
+    /* letter-spacing: 5px; */
+}
+
+.more {
+    text-align: center;
+    /* margin-right: auto; */
+    margin: auto;
+}
+
+button {
+    padding-top: 50px;
+}
+
+.btn {
+    background-image: linear-gradient(to bottom right, rgb(227, 175, 244), rgb(157, 166, 253));
+    margin-top: 30px;
+    margin-left: 10px;
+    border-radius: 5px;
+    padding: 8px 20px;
+    border-width: 0px;
+    cursor: pointer;
+    color: #581e58;
+    transition: all 0.25s;
+}
+
+.btn:hover {
+    background-image: linear-gradient(to bottom right, rgb(157, 166, 253), rgb(227, 175, 244));
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    color: #fde0ff;
+
+    a {
+        list-style-type: none;
+        text-decoration: none;
+        color: #fde0ff;
+    }
+
+    a:hover {
+        color: #a80a8e;
+    }
+  
+}
+
+.top {
+
+    text-decoration: none;
+    font-family: sans-serif;
+    color: #fde0ff;
+
+}
+
+
+
+/* animate */
+.animate__animated.animate__fadeInLeft.animate__fadeIn {
+    --animate-duration: 2s;
+}
+
+.animate__animated.animate__fadeInRight {
+    --animate-duration: 1s;
+    --animate-delay: 0.5s;
+}
+
+.connect {
+    padding: 40px;
+    text-align: center;
+    margin-top: 30px;
+    background-color: rgb(40, 14, 40);
+    /* background-image: linear-gradient(to bottom, #331535, #3f1a41, #4b1f4e, #57245b, #642968, #642968, #642968, #642968, #57245b, #4b1f4e, #3f1a41, #331535); */
+}
+
+.connect h2 {
+    padding: 10px;
+}
+
+/* contact  */
+.contact {
+    padding: 10px;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.contact li {
+
+    padding: 10px;
+}
+
+.contact img {
+
+    width: 3rem;
+    opacity: 65%;
+    transition: ease-in-out 0.25s;
+
+}
+
+.contact img:hover {
+    opacity: 100%;
+}
+
+@media only screen and (max-width: 400px) {
+
+    /* for phone */
+
+    #container {
+        width: 100%;
+        font-size: 0.55rem;
+        flex-direction: column;
+        text-align: center;
+        padding: 0px;
+    }
+
+    #container h1 {
+        font-size: 1.5rem;
+        margin-top: 20px;
+
+    }
+
+    #container h2 {
+        font-size: 0.85rem;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+
+    .left {
+        width: 80%;
+    }
+
+    .c .img img {
+        order: 1;
+    }
+
+    img {
+        width: 50%;
+    }
+
+    .left {
+        order: 2;
+    }
+
+    .button {
+        text-align: center;
+        font-size: small;
+    }
+
+}
+
+@media (min-width: 401px) and (max-width: 900px) {
+
+    /* for tablet */
+
+    #container {
+        width: 80%;
+        font-size: small;
+    }
+
+    #container {
+        flex-direction: column;
+        text-align: center;
+        padding: 0px;
+    }
+
+    img {
+        width: 25%;
+    }
+
+    .left {
+        order: 2;
+    }
+
+    .button {
+        margin-left: 0;
+        font-size: medium;
+    }
+
+    .img {
+        flex-direction: column;
+    }
+
+    #container h1 {
+        margin-top: 20px;
+        font-size: 2rem;
+
+    }
+
+    #container h2 {
+        font-size: 1rem;
+
+    }
+}
+
+@media (min-width: 901px) {
+
+    #container h1 {
+        font-size: 3rem;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    /* for phone */
+
+    h1 {
+        margin-bottom: 0px;
+        font-size: 1.3rem;
+        letter-spacing: 2px;
+    }
+
+    .diplay_1280 {
+        flex-direction: column;
+    }
+
+    .box img {
+        width: 100%;
+    }
+
+    #container {
+        width: 100%;
+        margin: auto;
+    }
+
+    .box {
+        padding: 2px;
+        text-align: center;
+        margin-bottom: 30px;
+        margin: 20px;
+    }
+
+    .box h2 {
+        font-size: 1.05rem;
+    }
+
+    p {
+        font-size: 0.75rem;
+    }
+}
+
+@media (min-width: 401px) and (max-width: 900px) {
+
+    /* for tablet */
+    .diplay_1280 {
+        flex-direction: column;
+    }
+
+    .box img {
+        width: 100%;
+    }
+
+    #container {
+        width: 90%;
+        margin: auto;
+    }
+
+    .box {
+        padding: 20px;
+        text-align: center;
+    }
+
+}
+
+@media (min-width: 901px) {
+
+    /* for desktop */
+    .box h2 {
+        font-size: 2.05rem;
+    }
+
+    p {
+        font-size: 1.15rem;
+    }
+}

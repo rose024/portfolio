@@ -1,0 +1,41 @@
+html {
+    scroll-behavior: smooth;
+  }
+
+footer {
+    text-align: center; 
+    color: #fde0ff;
+    margin-bottom: 15px;
+    margin-top: 20px;
+}
+
+
+
+footer .contact {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+ 
+    
+}
+
+footer .contact li{
+    
+       padding: 10px;
+}
+
+footer .contact img{
+    width:2rem;
+    
+}
+
+hr {
+    width: 99%;
+    display: flex;
+    margin: auto;
+    border: 0;
+    height: 1px;
+    margin-bottom: 15px;
+    margin-top: 10px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgb(247, 183, 255), rgba(0, 0, 0, 0));
+}

@@ -1,0 +1,161 @@
+
+#container {
+    width: 70%;
+    margin: auto;
+}
+
+.img {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+
+}
+.img img {
+    width: 60%;
+    height: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    transition: ease-in-out 0.25s;
+    border-radius: 10px;
+    margin:auto;
+}
+
+.img img:hover {
+    transform: scale(1.05);
+
+}
+.title{
+    display: flex;
+    justify-content: space-between;
+}
+a {
+    color: aliceblue;
+
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(247, 183, 255);
+}
+
+.btn button{
+    border-radius: 5px;
+    color:azure;
+    padding: 8px;
+    border-width: 1px;
+    background-color: #331535;
+    border-color:aliceblue;
+    border-style: solid;
+}
+
+.link button {
+    background-color: #331535;
+    background-image: linear-gradient(to bottom right, rgb(56, 107, 172), rgb(163, 57, 205));
+    margin-top: 10px;
+    border-radius: 5px;
+    border-width: 0px;
+    padding: 7px;
+    cursor: pointer;
+}
+
+.link button a:hover{
+    color:rgb(237, 216, 240);
+}
+
+.link button:hover {
+    background-image: linear-gradient(to bottom right, rgb(163, 57, 205), rgb(56, 107, 172));
+
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    margin-bottom: 15px;
+    margin-top: 10px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgb(247, 183, 255), rgba(0, 0, 0, 0));
+}
+
+h3,
+h1 {
+    letter-spacing: 5px;
+    margin-bottom: 10px;
+}
+
+.return {
+    font-size: 0.7rem;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+@media (max-width: 900px) {
+    .img img {
+        width: 95%;
+        margin: auto;
+        padding: 10px;
+        border-radius: 30px;
+    }
+
+    .img {
+        display: flex;
+        flex-direction: column;
+
+    }
+    
+}
+
+@media only screen and (max-width: 400px) {
+    /* for phone */
+    h3{
+        font-size:0.9rem ;
+    }
+    .rca p{
+        font-size: 0.60rem;
+    }
+    p{
+        font-size: 0.75rem;
+    }
+    h1{
+        font-size: 1.15rem;
+    }
+    .title{
+            flex-direction: column;
+    }
+    #container{
+        width: 90%;
+    }
+
+}
+
+@media (min-width: 401px) and (max-width: 900px) {
+    /* for tablet */
+    h3{
+        font-size:1.2rem ;
+    }
+    .rca p{
+        font-size: 0.85rem;
+    }
+    p{
+        font-size: 1rem;
+    }
+    h1{
+        font-size: 1.55rem;
+    }
+    
+
+}
+@media (min-width: 901px) {
+    /* for desktop */
+    h3{
+        font-size:1.5rem;
+    }
+    .rca p{
+        font-size: 1.1rem;
+    }
+    p{
+        font-size:1.3rem;
+    }
+    h1{
+        font-size: 1.85rem;
+    }
+    
+}
