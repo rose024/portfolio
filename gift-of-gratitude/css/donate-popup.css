@@ -1,0 +1,77 @@
+.popup {
+    position: relative;
+    /* display: inline-block; */
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* The actual popup */
+.popup .popuptext {
+    visibility: hidden;
+    /* position: absolute; */
+
+
+}
+
+.popuptext {
+    position: fixed;
+    inset: 0px;
+    width: 12rem;
+    height: 5rem;
+    max-width: 100vw;
+    max-height: 100dvh;
+    margin: auto;
+    z-index: 1;
+}
+
+span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* close popup */
+.popup .popuptext::after {
+    content: "\274c";
+    position: absolute;
+    bottom: 320%;
+    left: 120%;
+    border-style: none;
+    border-radius: 35px;
+    
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 0.5s;
+    animation: fadeIn 0.5s;
+   
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}

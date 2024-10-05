@@ -1,0 +1,194 @@
+#wrapper h1 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.text h2 {
+    color: var(--blue);
+}
+
+.list-section h2 {
+    padding-top: 50px;
+    text-align: center;
+    color: var(--green);
+}
+
+.volunteer-hire {
+    display: flex;
+    /* flex-wrap: wrap; */
+    margin-bottom: 50px;
+}
+
+.volunteer-hire img {
+    width: 500px;
+    height: auto;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    padding-right: 50px;
+    justify-content: center;
+}
+
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin: 30px;
+}
+
+.list li {
+    padding: 15px;
+    /* border-style: solid; */
+    list-style: none;
+    border-radius: 25px;
+    background-color: var(--blue);
+    margin: 10px;
+}
+
+.list li:hover{
+    opacity: 80%;
+}
+.join {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.join h2 {
+    color: var(--yellow);
+}
+
+.join img {
+    width: 100px;
+    padding: 20px;
+    background-color: var(--white);
+    border-radius: 50%;
+}
+
+#form-section {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.form {
+    margin-top: 50px;
+    color: var(--white);
+    width: 50%;
+    border:none;
+    padding: 80px;
+    font-size: 1.8rem;
+    border-radius: 40px;
+    background-color: var(--orangeone);
+}
+
+.question {
+    margin: 10px 0px 20px 0px;
+}
+
+input[type=text] {
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: none;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+input[type="checkbox"] {
+    box-sizing: border-box;
+    width: 15px;
+    height: 15px;
+    border-radius: 5px;
+    padding: 2px;
+    border: 2px solid var(--checkbox-border-color);
+    appearance: none;
+    background-color: var(--white);
+    outline: none;
+    transition: outline 0.1s;
+}
+
+input[type="checkbox"]:checked {
+    background-size: cover;
+    padding: 3px;
+  }
+  
+  input[type="checkbox"]:not(:disabled):checked {
+    border-color: var(--checkbox-checked-color);
+    background-image: url(../img/check-solid.svg);
+    padding: 2px;
+}
+
+
+  
+
+button[type=submit] {
+    width: 40%;
+    background-color: var(--yellow);
+    color: var(--white);
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+button {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+button[type=submit]:hover {
+    background-color: var(--blue);
+ }
+
+@media only screen and (max-width: 768px) {
+    .volunteer-hire {
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+        justify-content: center;
+    }
+
+    .text {
+        order: 2;
+    }
+
+    .volunteer-hire img {
+        margin: 30px;
+        width: 300px;
+        order: 1;
+    }
+
+    .list {
+        font-size: 1.4rem;
+    }
+
+    .list li {
+        margin: 5px;
+    }
+
+    .join img {
+        width: 70px;
+        padding: 15px;
+    }
+
+    .join h2 {
+        font-size: 2.5rem;
+    }
+
+    .form {
+        width: 100%;
+        padding: 50px;
+        font-size: 1.5rem;
+    }
+}
