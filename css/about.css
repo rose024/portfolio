@@ -161,7 +161,6 @@ hr {
     }
 
     .intro {
-        background-color: #40709f;
         
         display: flex;
         flex-direction: column;
@@ -199,10 +198,6 @@ hr {
 
     }
 
-     .intro {
-        background-color: #bb45c4;
-
-    }
 }
 
 @media (min-width: 901px) {

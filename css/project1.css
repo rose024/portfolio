@@ -28,6 +28,30 @@
     display: flex;
     justify-content: space-between;
 }
+
+.role-collab {
+    font-size: small;
+    padding: 3em 0em;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.content {
+    padding-bottom: 3em;
+
+    .content-img {
+        text-align: center;
+        
+        img {
+            width: 30%;
+            margin: 2em;
+            
+    
+        }
+    }
+    
+}
 a {
     color: aliceblue;
 
@@ -86,6 +110,15 @@ h1 {
     margin-top: 20px;
     margin-bottom: 30px;
 }
+.figma {
+    text-align: center;
+    padding: 2em;
+}
+.figma iframe{
+    border-radius: 2em;
+    width: 80%;
+
+}
 
 @media (max-width: 900px) {
     .img img {
@@ -108,8 +141,8 @@ h1 {
     h3{
         font-size:0.9rem ;
     }
-    .rca p{
-        font-size: 0.60rem;
+    .role-collab p{
+        /* font-size: 0.60rem; */
     }
     p{
         font-size: 0.75rem;
@@ -131,7 +164,7 @@ h1 {
     h3{
         font-size:1.2rem ;
     }
-    .rca p{
+    .role-collab p{
         font-size: 0.85rem;
     }
     p{
@@ -148,7 +181,7 @@ h1 {
     h3{
         font-size:1.5rem;
     }
-    .rca p{
+    .role-collab p{
         font-size: 1.1rem;
     }
     p{
