@@ -1,10 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@1,9..144,700&display=swap');
 
+:root {
+    --white: #fde0ff;
+    --regular-text: #fde0ff;
+    --heading: #fde0ff;
+
+}
 
 #container {
     width: 70%;
     height: 100vh;
-    color: #fde0ff;
+    color: var(--heading);
     display: flex;
     align-items: center;
     justify-content: stretch;
@@ -29,6 +35,20 @@ body {
     list-style-type: none;
 }
 
+.button-down {
+    /* padding: 10px; */
+    margin-top: 2em;
+    background-color: transparent;
+    color: #fde0ff;
+    cursor: pointer;
+    border-width: 0px;
+    font-size: xx-large;
+    transition: ease-in-out 0.25s;
+    text-align: center;
+    /* font-size: 5em; */
+    visibility:hidden ;
+    
+}
 
 .button {
     padding: 10px;
@@ -39,7 +59,8 @@ body {
     cursor: pointer;
     border-width: 0px;
     transition: ease-in-out 0.25s;
-    font-size: large;
+    /* font-size: 5em; */
+    
 }
 
 .button:hover {
@@ -93,6 +114,12 @@ body {
     background-color: #331535;
 }
 
+h1,
+h2 {
+    padding-bottom: 10px;
+    /* letter-spacing: 5px; */
+}
+
 h2 {
     letter-spacing: 5px;
 }
@@ -107,12 +134,6 @@ h2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
-
-h1,
-h2 {
-    padding-bottom: 10px;
-    /* letter-spacing: 5px; */
 }
 
 .more {
@@ -141,7 +162,7 @@ button {
     background-image: linear-gradient(to bottom right, rgb(157, 166, 253), rgb(227, 175, 244));
 }
 
-.title {
+#title {
     display: flex;
     justify-content: center;
     color: #fde0ff;
@@ -262,6 +283,12 @@ button {
         font-size: small;
     }
 
+    .button-down {
+        visibility:visible ;
+    }
+
+
+   
 }
 
 @media (min-width: 401px) and (max-width: 900px) {
@@ -306,6 +333,10 @@ button {
         font-size: 1rem;
 
     }
+    .button-down {
+        visibility:visible ;
+    }
+
 }
 
 @media (min-width: 901px) {

@@ -1,31 +1,40 @@
 html {
     scroll-behavior: smooth;
-  }
+}
 
 footer {
-    text-align: center; 
+    text-align: center;
     color: #fde0ff;
     margin-bottom: 15px;
     margin-top: 20px;
-}
 
+    .footer {
 
-
-footer .contact {
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
- 
+        a {
+            color: #fde0ff;
+            
+            text-decoration: none;
+        }
+        p {
+            margin-top: 1em;
+        }
+        .contact {
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+        }
     
-}
-
-footer .contact li{
+        .contact li {
     
-       padding: 10px;
-}
-
-footer .contact img{
-    width:2rem;
+            padding: 10px;
+        }
+    
+        .contact img {
+            width: 2rem;
+    
+        }
+    
+    }
     
 }
 
