@@ -103,7 +103,7 @@ hr {
     padding: 40px;
     text-align: center;
     margin-top: 30px;
-    background-color: rgb(40, 14, 40);
+    /* background-color: rgb(40, 14, 40); */
     /* background-image: linear-gradient(to bottom, #331535, #3f1a41, #4b1f4e, #57245b, #642968, #642968, #642968, #642968, #57245b, #4b1f4e, #3f1a41, #331535); */
 }
 
