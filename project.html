@@ -17,15 +17,14 @@
 
 <header>
     <nav class="navbar">
-       
+
         <ul class="nav-branding animate__animated animate__fadeInDown">
             <li>
-                <a href="index.html"><img src="img/logo_full.png"
-                    alt="A logo"> 
-               </li> 
+                <a href="index.html"><img src="img/logo_full.png" alt="A logo">
+            </li>
             <li>
-                <h1 class = "h1">Rose Rabano</h1> </a> 
-               </li>
+                <h1 class="h1">Rose Rabano</h1> </a>
+            </li>
         </ul>
 
 
@@ -52,7 +51,7 @@
 </header>
 
 <body>
-   
+
     <div id="container">
         <h1 class="nav-item animate__animated animate__bounceInDown">Development</h1>
 
@@ -63,12 +62,14 @@
                     <h2>Code Ninjas</h2>
                     <hr>
                     <p>
-                        Built an interactive website using HTML, CSS/SCSS, JavaScript, incorporating frameworks such as Svelte and Bun. This is for Code Ninja's students
+                        Built an interactive website using HTML, CSS/SCSS, JavaScript, incorporating frameworks such as
+                        Svelte and Bun. This is for Code Ninja's students
                         and instructors to manage and track their progress.
                     </p>
                     <div>
                         <a href="code-ninjas.html"><input class="btn" type="button" value="View Detail"></a>
-                        <a href="https://github.com/Naawa/code-ninjas-app" target="_blank"><input class="btn" type="button" value="View Github Repository"></a>
+                        <a href="https://github.com/Naawa/code-ninjas-app" target="_blank"><input class="btn"
+                                type="button" value="View Github Repository"></a>
                     </div>
                 </div>
 
@@ -81,12 +82,14 @@
                 <div class="text" style="margin:10px">
                     <h2>TeamVan Re-design</h2>
                     <hr>
-                    <p>This is a redesign of TeamVan using GoHighLevel platform. I made changes to modernize the website’s design and improve usability, making it more intuitive for potential clients to navigate and access services. 
+                    <p>This is a redesign of TeamVan using GoHighLevel platform. I made changes to modernize the
+                        website’s design and improve usability, making it more intuitive for potential clients to
+                        navigate and access services.
                     </p>
                     <div>
                         <a href="teamvan.html"><input class="btn" type="button" value="View Detail"></a>
-                        <a href="https://go.kangen.mx/v2/preview/2HKyO7QnkBO6h9DgMuXl" target="_blank"><input class="btn" type="button"
-                                value="Visit Website"></a>
+                        <a href="https://go.kangen.mx/v2/preview/2HKyO7QnkBO6h9DgMuXl" target="_blank"><input
+                                class="btn" type="button" value="Visit Website"></a>
 
                     </div>
                 </div>
@@ -100,7 +103,8 @@
                 <div class="text" style="margin:10px">
                     <h2>Gift of Gratitude</h2>
                     <hr>
-                    <p>Gift of Gratitude is a charity event hosted in Vancouver every Christmas. This website is handcoded with HTML, CSS, JS, and JotForm.</p>
+                    <p>Gift of Gratitude is a charity event hosted in Vancouver every Christmas. This website is
+                        handcoded with HTML, CSS, JS, and JotForm.</p>
 
                     <div>
                         <a href="gog.html"><input class="btn" type="button" value="View Detail"></a>
@@ -111,7 +115,7 @@
             </div>
         </div>
 
-        
+
 
     </div>
     <div class="footer">
@@ -127,7 +131,11 @@
                 <li><a href="mailto:princessrabano@yahoo.com"><img src="img/email.png" alt="email"></a></li>
             </div>
             <a href="#" class="top">Back to Top &#8593;</a>
-            <p>Made with 💗 | &copy Rose Rabano 2024</p>
+            <p>Made with 💗 | &copy; <span id="copyright-year"></span> Rose Rabano</p>
+
+            <script>
+                document.getElementById('copyright-year').textContent = new Date().getFullYear();
+            </script>
         </div>
     </footer>
 

@@ -13,15 +13,14 @@
 
 <header>
     <nav class="navbar">
-       
+
         <ul class="nav-branding animate__animated animate__fadeInDown">
             <li>
-                <a href="index.html"><img src="img/logo_full.png"
-                    alt="A logo"> 
-               </li> 
+                <a href="index.html"><img src="img/logo_full.png" alt="A logo">
+            </li>
             <li>
-                <h1 class = "h1">Rose Rabano</h1> </a> 
-               </li>
+                <h1 class="h1">Rose Rabano</h1> </a>
+            </li>
         </ul>
 
 
@@ -53,7 +52,7 @@
         <div class="return">
             <a href="project.html">&larr; RETURN</a>
         </div>
-        
+
         <div class="title">
             <h1> La Belle </h1>
             <div class="btn">
@@ -66,7 +65,7 @@
         <div class="link">
             <button>
                 <p><a href="https://weather.princessrabano.ca/" target="_blank">Visit Website:
-                    https://weather.princessrabano.ca/</a></p>
+                        https://weather.princessrabano.ca/</a></p>
             </button>
         </div>
 
@@ -84,25 +83,30 @@
             <p> None </p>
             <br>
             <h3>About the Weather Website</h3>
-            <p>Be able to check out the current celsius of any city around the world. Input any city and it will show up the </p>
+            <p>Be able to check out the current celsius of any city around the world. Input any city and it will show up
+                the </p>
         </div>
         <hr>
         <h1><br>The Process</h1>
         <p>
-            For the duration of two weeks, I made a website for a website. I researched how to use API and how to input it in my code. I used <a href="https://openweathermap.org/">https://openweathermap.org/</a> to use an API Key.
-             I gathered photos from Pexels.
+            For the duration of two weeks, I made a website for a website. I researched how to use API and how to input
+            it in my code. I used <a href="https://openweathermap.org/">https://openweathermap.org/</a> to use an API
+            Key.
+            I gathered photos from Pexels.
         </p>
         <br>
 
         <h2>Logo</h2>
         <br>
-        <p>I used a stock photo from Adobe Stock for the logo. I decided to choose a simple yet something that will relate to the website.
-            
+        <p>I used a stock photo from Adobe Stock for the logo. I decided to choose a simple yet something that will
+            relate to the website.
+
         </p>
         <br>
         <h2>Development Process</h2>
         <br>
-        <p> Using HTML, CSS, JS, and API. I used all of them together to develop my website. I researched first how to use API and Postman, then after I did a simple style. </p>
+        <p> Using HTML, CSS, JS, and API. I used all of them together to develop my website. I researched first how to
+            use API and Postman, then after I did a simple style. </p>
 
         <hr style="margin-top: 30px;">
     </div>
@@ -116,7 +120,11 @@
             <li><a href="https://github.com/rose024"><img src="img/github.png" alt="github"></a></li>
             <li><a href="mailto:princessrabano@yahoo.com"><img src="img/email.png" alt="email"></a></li>
         </div>
-        <p>Made with 💗 | &copy Rose Rabano 2024</p>
+        <p>Made with 💗 | &copy; <span id="copyright-year"></span> Rose Rabano</p>
+
+        <script>
+            document.getElementById('copyright-year').textContent = new Date().getFullYear();
+        </script>
     </div>
 </footer>
 

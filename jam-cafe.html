@@ -58,14 +58,15 @@
 
             <div class="btn">
                 <button>
-                   Discipline: UI Design, Branding | Tools: Figma, FigJam, Illustrator
+                    Discipline: UI Design, Branding | Tools: Figma, FigJam, Illustrator
                 </button>
             </div>
         </div>
 
         <div class="link">
             <button>
-                <p><a href="https://www.figma.com/proto/KHomtM3OoC5nld5vPzFTan/PlayExpo?node-id=1-2&node-type=frame&t=YktbJJX6ikxQsouK-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A2" target="_blank">View Prototype</a></p>
+                <p><a href="https://www.figma.com/proto/KHomtM3OoC5nld5vPzFTan/PlayExpo?node-id=1-2&node-type=frame&t=YktbJJX6ikxQsouK-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A2"
+                        target="_blank">View Prototype</a></p>
             </button>
         </div>
 
@@ -97,56 +98,66 @@
         <div class="content">
             <h1> Project Overview</h1>
             <p>
-                The project is designed as a pixelated, retro-style website to bring a space for gamers and game developers for a video game showcases. Inspired by retro games, the site allows users to
-                 find nearby game events, purchase tickets, and provides a platform for indie and established developers to showcase their work. 
-             
+                The project is designed as a pixelated, retro-style website to bring a space for gamers and game
+                developers for a video game showcases. Inspired by retro games, the site allows users to
+                find nearby game events, purchase tickets, and provides a platform for indie and established developers
+                to showcase their work.
+
             </p>
         </div>
 
         <div class="content">
             <h1>01 Goal</h1>
             <p>
-                The goal was to capture the spirit of retro gaming while ensuring a smooth and intuitive user experience. I wanted to create a platform that not only feels like a tribute to indie video games 
-                but also brings people together in real life to celebrate gaming where they can be able to connect and make friends. The focus was on building an experience that’s both visually nostalgic and functionally modern, making it easy
+                The goal was to capture the spirit of retro gaming while ensuring a smooth and intuitive user
+                experience. I wanted to create a platform that not only feels like a tribute to indie video games
+                but also brings people together in real life to celebrate gaming where they can be able to connect and
+                make friends. The focus was on building an experience that’s both visually nostalgic and functionally
+                modern, making it easy
                 for users to explore events, buy tickets, and participate in the gaming community.
             </p>
-           
+
         </div>
 
 
         <div class="content">
             <h1>02 Design Process</h1>
             <p>
-                Every design element, from the color palette to the pixelated icons, was crafted to create a nostalgic experience that gamers can immediately connect with. The logo was made with 6
-                designs to start ffrom sketch until I decided to design using Illustrator a controller with a crown at the top with a play button from the name 'Play Expo' itself. 
-                <div class="content-img">
-                    <img src="img/playexpo-logo.png" alt="logo">
-                    <img src="img/playexpo-moodboard.png" alt="moodboard">
-                </div>
+                Every design element, from the color palette to the pixelated icons, was crafted to create a nostalgic
+                experience that gamers can immediately connect with. The logo was made with 6
+                designs to start ffrom sketch until I decided to design using Illustrator a controller with a crown at
+                the top with a play button from the name 'Play Expo' itself.
+            <div class="content-img">
+                <img src="img/playexpo-logo.png" alt="logo">
+                <img src="img/playexpo-moodboard.png" alt="moodboard">
+            </div>
             </p>
         </div>
 
 
         <div class="content">
             <h1>03 Prototype</h1>
-            
+
 
             <div class="figma">
-                
-                <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/design/KHomtM3OoC5nld5vPzFTan/PlayExpo?node-id=0-1&embed-host=share" 
-                allowfullscreen></iframe>
-       
+
+                <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450"
+                    src="https://embed.figma.com/design/KHomtM3OoC5nld5vPzFTan/PlayExpo?node-id=0-1&embed-host=share"
+                    allowfullscreen></iframe>
+
             </div>
-           
+
         </div>
 
 
         <div class="content">
             <h1>Project Insights</h1>
-            <p> 
-                By combining functionality with a nostalgic visual style, I created a platform that resonates deeply with the gaming community. This project gave me the chance to dive into pixel art and classic game-inspired design.
+            <p>
+                By combining functionality with a nostalgic visual style, I created a platform that resonates deeply
+                with the gaming community. This project gave me the chance to dive into pixel art and classic
+                game-inspired design.
                 I enjoyed using different element and plug-ins of Figma to create a pixelated interface.
-                    
+
             </p>
         </div>
 
@@ -162,7 +173,11 @@
             <li><a href="https://github.com/rose024"><img src="img/github.png" alt="github"></a></li>
             <li><a href="mailto:princessrabano@yahoo.com"><img src="img/email.png" alt="email"></a></li>
         </div>
-        <p>Made with 💗 | &copy Rose Rabano 2024</p>
+        <p>Made with 💗 | &copy; <span id="copyright-year"></span> Rose Rabano</p>
+
+        <script>
+            document.getElementById('copyright-year').textContent = new Date().getFullYear();
+        </script>
     </div>
 </footer>
 

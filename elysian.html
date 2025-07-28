@@ -43,7 +43,7 @@
         <div class="return">
             <a href="project.html">&larr; RETURN</a>
         </div>
-        
+
         <div class="title">
             <h1> Elysian </h1>
             <div class="btn">
@@ -56,7 +56,7 @@
         <div class="link">
             <button>
                 <p><a href="https://elysian.princessrabano.ca/" target="_blank">Visit Website:
-                    https://elysian.princessrabano.ca/</a></p>
+                        https://elysian.princessrabano.ca/</a></p>
             </button>
         </div>
 
@@ -74,24 +74,30 @@
             <p> Rose (Developer), Keitlyn (Developer), Janelle(Designer) </p>
             <br>
             <h3>About Elysian</h3>
-            <p>Elysian is a cafe located in Vancouver. They offer sweet delicacies such as cake slices, beverages, and more. Users are able to loginand register to make a reservation.</p>
+            <p>Elysian is a cafe located in Vancouver. They offer sweet delicacies such as cake slices, beverages, and
+                more. Users are able to loginand register to make a reservation.</p>
         </div>
         <hr>
         <h1><br>The Process</h1>
         <p>
-            For the duration of two weeks, I made a cafe that is web responsive. It can be able to view on mobile, desktop, and tablet. For the redesign, I worked with the team and we included PHP for users to be able to login.
+            For the duration of two weeks, I made a cafe that is web responsive. It can be able to view on mobile,
+            desktop, and tablet. For the redesign, I worked with the team and we included PHP for users to be able to
+            login.
         </p>
         <br>
 
         <h2>Logo</h2>
         <br>
-        <p>I used a stock photo from Adobe Stock for the logo and added the name of the cafe. It is a slice of a cake indicating sweets and delicacy.
-            
+        <p>I used a stock photo from Adobe Stock for the logo and added the name of the cafe. It is a slice of a cake
+            indicating sweets and delicacy.
+
         </p>
         <br>
         <h2>Development Process</h2>
         <br>
-        <p> Using jQuery and slick slider, I made a carousel/gallery to make them fully web responsive for any devices suchas mobile, or desktop. As I am both a Designer and Developer, I got the style guide for a blue green to make it look classy. </p>
+        <p> Using jQuery and slick slider, I made a carousel/gallery to make them fully web responsive for any devices
+            suchas mobile, or desktop. As I am both a Designer and Developer, I got the style guide for a blue green to
+            make it look classy. </p>
 
         <hr style="margin-top: 30px;">
     </div>
@@ -105,7 +111,11 @@
             <li><a href="https://github.com/rose024"><img src="img/github.png" alt="github"></a></li>
             <li><a href="mailto:princessrabano@yahoo.com"><img src="img/email.png" alt="email"></a></li>
         </div>
-        <p>Made with 💗 | &copy Rose Rabano 2024</p>
+        <p>Made with 💗 | &copy; <span id="copyright-year"></span> Rose Rabano</p>
+
+        <script>
+            document.getElementById('copyright-year').textContent = new Date().getFullYear();
+        </script>
     </div>
 </footer>
 

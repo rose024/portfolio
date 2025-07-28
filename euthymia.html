@@ -151,7 +151,9 @@
 
             <div class="figma">
 
-                <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/design/tjJQHrh3LDkWXszoycolVk/Mental-HealthPrototype---UI%2FUX?node-id=0-1&embed-host=share" allowfullscreen></iframe>
+                <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450"
+                    src="https://embed.figma.com/design/tjJQHrh3LDkWXszoycolVk/Mental-HealthPrototype---UI%2FUX?node-id=0-1&embed-host=share"
+                    allowfullscreen></iframe>
             </div>
         </div>
 
@@ -191,7 +193,11 @@
             <li><a href="https://github.com/rose024"><img src="img/github.png" alt="github"></a></li>
             <li><a href="mailto:princessrabano@yahoo.com"><img src="img/email.png" alt="email"></a></li>
         </div>
-        <p>Made with 💗 | &copy Rose Rabano 2024</p>
+        <p>Made with 💗 | &copy; <span id="copyright-year"></span> Rose Rabano</p>
+
+        <script>
+            document.getElementById('copyright-year').textContent = new Date().getFullYear();
+        </script>
     </div>
 </footer>
 
